@@ -1,13 +1,17 @@
 <?php
 /**
-* Plugin Name: Min Gallery
-* Description: Min Gallery — is a Gutenberg Image Gallery Block.
-* Author: Rejuan Ahamed
-* Version: 1.0.0
-* License: GPL2+
-*
-* @package Min Gallery
-*/
+ * Plugin Name:       Image Gallery
+ * Description:       This is simple image gallery block scaffolded with Create Block tool.
+ * Requires at least: 6.1
+ * Requires PHP:      7.0
+ * Version:           0.1.0
+ * Author:            Coalition Technologies
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       starter-block
+ *
+ * @package           create-block
+ */
 
 # Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,9 +24,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
 
 # Add CSS for Frontend
-add_action( 'wp_enqueue_scripts', 'min_slider_style' );
-if(!function_exists('min_slider_style')):
-	function min_slider_style(){
+add_action( 'wp_enqueue_scripts', 'image_gallery_style' );
+if(!function_exists('image_gallery_style')):
+	function image_gallery_style(){
 		# CSS
 		wp_enqueue_style('magnific-popup',plugins_url('assets/css/magnific-popup.css',__FILE__));
 		wp_enqueue_style('slider-css',plugins_url('assets/css/main.css',__FILE__));

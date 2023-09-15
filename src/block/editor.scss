@@ -6,23 +6,27 @@
  */
 
 .wp-block-cgb-block-min-slider  {
-  background: $green;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+    background: $green;
+    border: 0.2rem solid $black;
+    color: $black;
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 2rem;
 }
+
 .col-3.gallery-item {
-  width: 33.33%;
-  float: left;
+    width: 33.33% !important;
+    float: left;
 }
+
 .gallery-item a {
-display: inline-block
+    display: inline-block
 }
+
 .gallery-item {
     position: relative;
 }
+
 .remove-item {
     position: absolute;
     top: 10px;
